@@ -7,10 +7,10 @@ export default function Stats() {
 
   return (
     <section id="blog" className="relative bg-white py-[70px]">
-      <div className="absolute inset-y-0 left-0 w-full rounded-[120px_0_120px_0] bg-cw-purple/80 lg:rounded-[350px_0_350px_0]" />
-      <div className="inner relative grid items-center gap-10 xl:grid-cols-[1fr_562px] xl:gap-[92px]">
+      <div className="absolute inset-y-[0px] left-[0px] w-full rounded-[120px_0_120px_0] bg-cw-purple/80 lg:rounded-[350px_0_350px_0]" />
+      <div className="inner relative grid items-center gap-[40px] xl:grid-cols-[1fr_562px] xl:gap-[92px]">
         <div>
-          <h2 className="section-title text-[34px] font-semibold tracking-normal text-[#1B1B1B] sm:text-[40px] lg:text-[45px]">
+          <h2 className="section-title text-[34px] font-semibold leading-[37px] tracking-normal text-[#1B1B1B] sm:text-[40px] sm:leading-[43px] lg:text-[45px] lg:leading-[49px]">
             Take Your Business <br />
             To New Heights <br />
             With Our Top Services.
@@ -28,8 +28,8 @@ export default function Stats() {
             Get In Touch Now
           </a>
         </div>
-        <div className="grid grid-cols-1 justify-items-center gap-6 sm:grid-cols-2 sm:items-start sm:gap-[40px] lg:justify-items-stretch">
-          <div className="w-full space-y-6 sm:space-y-[40px]">
+        <div className="grid grid-cols-1 justify-items-center gap-[24px] sm:grid-cols-2 sm:items-start sm:gap-[40px] lg:justify-items-stretch">
+          <div className="w-full space-y-[24px] sm:space-y-[40px]">
             <StatCard
               stat={stats[0]}
               active={activeStat === 0}
@@ -41,7 +41,7 @@ export default function Stats() {
               onClick={() => setActiveStat(2)}
             />
           </div>
-          <div className="w-full space-y-6 sm:space-y-[40px] sm:pt-[95px]">
+          <div className="w-full space-y-[24px] sm:space-y-[40px] sm:pt-[95px]">
             <StatCard
               stat={stats[1]}
               active={activeStat === 1}
@@ -73,7 +73,7 @@ function StatCard({ stat, active, onClick }) {
       tabIndex={0}
       onClick={onClick}
       onKeyDown={handleKeyDown}
-      className={`group mx-auto grid min-h-[210px] w-full max-w-[261px] cursor-pointer place-items-center rounded-[15px] p-5 text-center outline-none ring-0 shadow-soft transition duration-300 hover:-translate-y-1 hover:bg-cw-green hover:text-white hover:shadow-card focus:outline-none focus:ring-0 sm:h-[235px] lg:max-w-none ${
+      className={`group mx-auto grid min-h-[210px] w-full max-w-[261px] cursor-pointer place-items-center rounded-[15px] p-[20px] text-center outline-none ring-0 shadow-soft transition duration-300 hover:-translate-y-[4px] hover:bg-cw-green hover:text-white hover:shadow-card focus:outline-none focus:ring-0 sm:h-[235px] lg:max-w-none ${
         active ? "bg-cw-green text-white shadow-card" : "bg-white"
       }`}
     >

@@ -6,20 +6,20 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="bg-white py-[70px] lg:py-[100px]">
       <div className="inner text-center">
-        <h2 className="text-[34px] font-semibold tracking-normal text-[#1B1B1B] sm:text-[40px] lg:text-[45px]">
+        <h2 className="text-[34px] font-semibold leading-[37px] tracking-normal text-[#1B1B1B] sm:text-[40px] sm:leading-[43px] lg:text-[45px] lg:leading-[49px]">
           Our Latest Project
         </h2>
-        <div className="relative mt-[33px] flex justify-start gap-6 overflow-x-auto pb-[25px] text-[16px] font-medium text-[#7B7B7B] [scrollbar-width:none] sm:justify-center sm:gap-8 lg:gap-[73px] [&::-webkit-scrollbar]:hidden">
-          <span className="pointer-events-none absolute bottom-0 left-1/2 h-[4px] w-full max-w-[892px] -translate-x-1/2 rounded-full bg-[#CECECE]" />
+        <div className="relative mt-[33px] flex justify-start gap-[24px] overflow-x-auto pb-[25px] text-[16px] font-medium text-[#7B7B7B] [scrollbar-width:none] sm:justify-center sm:gap-[32px] lg:gap-[73px] [&::-webkit-scrollbar]:hidden">
+          <span className="pointer-events-none absolute bottom-[0px] left-[50%] h-[4px] w-full max-w-[892px] -translate-x-[50%] rounded-full bg-[#CECECE]" />
           {portfolioTabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActive(tab)}
-              className={`relative flex-none appearance-none border-0 bg-transparent pb-[10px] outline-none ring-0 transition hover:text-cw-green focus:outline-none focus:ring-0 ${active === tab ? "text-cw-green" : ""}`}
+              className={`relative flex-none appearance-none border-[0px] bg-transparent pb-[10px] outline-none ring-0 transition hover:text-cw-green focus:outline-none focus:ring-0 ${active === tab ? "text-cw-green" : ""}`}
             >
               {tab}
               <span
-                className={`pointer-events-none absolute bottom-[-25px] left-1/2 h-[4px] -translate-x-1/2 rounded-full bg-cw-green transition-all ${active === tab ? "w-[80px] sm:w-[120px] lg:w-[154px]" : "w-0"}`}
+                className={`pointer-events-none absolute bottom-[-25px] left-[50%] h-[4px] -translate-x-[50%] rounded-full bg-cw-green transition-all ${active === tab ? "w-[80px] sm:w-[120px] lg:w-[154px]" : "w-[0px]"}`}
               />
             </button>
           ))}
@@ -34,7 +34,7 @@ export default function Portfolio() {
                   className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                 />
               </div>
-              <h3 className="mt-[20px] text-[22px] font-bold tracking-[-.03em] text-cw-dark">
+              <h3 className="mt-[20px] text-[22px] font-bold tracking-[-0.66px] text-cw-dark">
                 {project.title}
               </h3>
               <p className="mx-auto mt-[7px] max-w-[344px] text-[16px] text-cw-muted">

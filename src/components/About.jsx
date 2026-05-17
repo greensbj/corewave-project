@@ -1,9 +1,9 @@
 export default function About() {
   return (
     <section id="about" className="bg-white py-[70px] lg:py-[100px]">
-      <div className="inner grid items-center gap-10 lg:grid-cols-[600px_1fr]">
+      <div className="inner grid items-center gap-[40px] lg:grid-cols-[600px_1fr]">
         <div>
-          <h2 className="section-title pr-0 text-[34px] font-semibold tracking-normal text-[#1B1B1B] sm:text-[40px] lg:pr-[90px] lg:text-[45px]">
+          <h2 className="section-title pr-[0px] text-[34px] font-semibold leading-[37px] tracking-normal text-[#1B1B1B] sm:text-[40px] sm:leading-[43px] lg:pr-[90px] lg:text-[45px] lg:leading-[49px]">
             Experience The Power Of Corewave
           </h2>
           <p className="text-[16px] text-[#7B7B7B] section-copy mt-[29px] max-w-[550px]">
@@ -15,7 +15,7 @@ export default function About() {
           </p>
           <a
             href="#services"
-            className="mt-[45px] inline-flex rounded-[5px] bg-cw-mint py-[14.5px] px-[25px] text-[16px] font-normal text-cw-green transition hover:-translate-y-0.5 hover:bg-cw-green hover:text-white"
+            className="mt-[45px] inline-flex rounded-[5px] bg-cw-mint py-[14.5px] px-[25px] text-[16px] font-normal text-cw-green transition hover:-translate-y-[2px] hover:bg-cw-green hover:text-white"
           >
             Learn More
           </a>

@@ -7,10 +7,10 @@ export default function Services() {
 
   return (
     <section id="services" className="relative bg-white py-[70px]">
-      <div className="absolute inset-y-0 left-0 w-full rounded-[120px_0_120px_0] bg-cw-purple/80 lg:rounded-[350px_0_350px_0]" />
-      <div className="inner relative grid items-center gap-10 xl:grid-cols-[664px_1fr] xl:gap-[113px]">
-        <div className="order-2 grid grid-cols-1 justify-items-center gap-6 sm:grid-cols-2 sm:items-start sm:gap-[40px] xl:order-1">
-          <div className="space-y-6 sm:space-y-[40px] xl:pt-[133px]">
+      <div className="absolute inset-y-[0px] left-[0px] w-full rounded-[120px_0_120px_0] bg-cw-purple/80 lg:rounded-[350px_0_350px_0]" />
+      <div className="inner relative grid items-center gap-[40px] xl:grid-cols-[664px_1fr] xl:gap-[113px]">
+        <div className="order-2 grid grid-cols-1 justify-items-center gap-[24px] sm:grid-cols-2 sm:items-start sm:gap-[40px] xl:order-1">
+          <div className="space-y-[24px] sm:space-y-[40px] xl:pt-[133px]">
             <ServiceCard
               service={services[0]}
               active={activeService === 0}
@@ -22,7 +22,7 @@ export default function Services() {
               onClick={() => setActiveService(2)}
             />
           </div>
-          <div className="space-y-6 sm:space-y-[40px]">
+          <div className="space-y-[24px] sm:space-y-[40px]">
             <ServiceCard
               service={services[1]}
               active={activeService === 1}
@@ -35,8 +35,8 @@ export default function Services() {
             />
           </div>
         </div>
-        <div className="order-1 xl:order-2 xl:pt-5">
-          <h2 className="section-title text-[34px] font-semibold tracking-normal text-[#1B1B1B] sm:text-[40px] lg:text-[45px]">
+        <div className="order-1 xl:order-2 xl:pt-[20px]">
+          <h2 className="section-title text-[34px] font-semibold leading-[37px] tracking-normal text-[#1B1B1B] sm:text-[40px] sm:leading-[43px] lg:text-[45px] lg:leading-[49px]">
             We Offer A Variety Of Services Such As
           </h2>
           <p className="section-copy mt-[30px] max-w-[543px]">
@@ -47,7 +47,7 @@ export default function Services() {
           </p>
           <a
             href="#portfolio"
-            className="mt-[30px] inline-flex rounded-[5px] bg-[#DAF6EB] px-[25px] py-[14.5px] text-[16px] font-normal text-cw-green transition hover:-translate-y-0.5 hover:bg-cw-green hover:text-white"
+            className="mt-[30px] inline-flex rounded-[5px] bg-[#DAF6EB] px-[25px] py-[14.5px] text-[16px] font-normal text-cw-green transition hover:-translate-y-[2px] hover:bg-cw-green hover:text-white"
           >
             All Services
           </a>
@@ -85,7 +85,7 @@ function ServiceCard({ service, active, onClick }) {
       />
       <h3 className="mt-[14px] text-[20px] font-semibold">{service.title}</h3>
       <p
-        className={`service-text mt-[14px] text-[16px] leading-[1.55] transition duration-300 ${
+        className={`service-text mt-[14px] text-[16px] leading-[24.8px] transition duration-300 ${
           active ? "text-white/82" : "text-cw-muted"
         }`}
       >

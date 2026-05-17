@@ -34,11 +34,11 @@
   }
   /* Inner container with responsive padding */
   .inner {
-    @apply mx-auto w-full max-w-[1320px] px-5 sm:px-8 xl:px-0;
+    @apply mx-auto w-full max-w-[1320px] px-[20px] sm:px-[32px] xl:px-[0px];
   }
   /* Logo text styles */
   .logo-mark {
-    @apply inline-flex items-baseline text-[12px] font-bold tracking-[-.04em] leading-none;
+    @apply inline-flex items-baseline text-[12px] font-bold tracking-[-0.48px] leading-none;
   }
   .logo-core {
     @apply text-cw-green;
@@ -52,22 +52,22 @@
   }
   /* Button styles */
   .green-btn {
-    @apply inline-flex items-center justify-center rounded-[5px] bg-cw-green px-[18px] py-[8px] text-[16px] font-bold leading-none text-white transition duration-300 hover:-translate-y-0.5 hover:bg-cw-hover hover:shadow-[0_8px_22px_rgba(6,174,116,.28)] active:translate-y-0;
+    @apply inline-flex items-center justify-center rounded-[5px] bg-cw-green px-[18px] py-[8px] text-[16px] font-bold leading-none text-white transition duration-300 hover:-translate-y-[2px] hover:bg-cw-hover hover:shadow-[0_8px_22px_rgba(6,174,116,.28)] active:translate-y-[0px];
   }
   .outline-btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-[5px] border border-cw-green bg-white px-[18px] py-[8px] text-[16px] font-normal leading-none text-cw-dark transition duration-300 hover:-translate-y-0.5 hover:border-cw-hover hover:bg-cw-hover hover:text-white hover:shadow-[0_8px_22px_rgba(6,174,116,.22)] active:translate-y-0;
+    @apply inline-flex items-center justify-center gap-[8px] rounded-[5px] border border-cw-green bg-white px-[18px] py-[8px] text-[16px] font-normal leading-none text-cw-dark transition duration-300 hover:-translate-y-[2px] hover:border-cw-hover hover:bg-cw-hover hover:text-white hover:shadow-[0_8px_22px_rgba(6,174,116,.22)] active:translate-y-[0px];
   }
   /* Section title styles */
   .section-title {
-    @apply text-[26px] font-normal leading-[1.08] tracking-[-.045em] text-[#1b1b1b] sm:text-[30px];
+    @apply text-[26px] font-normal leading-[28px] tracking-[-1.17px] text-[#1b1b1b] sm:text-[30px] sm:leading-[32px] sm:tracking-[-1.35px];
   }
   /* Section copy text styles */
   .section-copy {
-    @apply text-[16px] font-normal leading-[1.6] text-cw-muted;
+    @apply text-[16px] font-normal leading-[25.6px] text-cw-muted;
   }
   /* Service card styles with hover effects */
   .service-card {
-    @apply h-auto min-h-[280px] w-full max-w-[312px] rounded-[10px] bg-[white] p-5 shadow-soft transition duration-300 hover:-translate-y-1 hover:bg-cw-green hover:text-white hover:shadow-card sm:min-h-[300px] sm:p-[25px] lg:h-[322px] lg:w-[312px];
+    @apply h-auto min-h-[280px] w-full max-w-[312px] rounded-[10px] bg-[white] p-[20px] shadow-soft transition duration-300 hover:-translate-y-[4px] hover:bg-cw-green hover:text-white hover:shadow-card sm:min-h-[300px] sm:p-[25px] lg:h-[322px] lg:w-[312px];
   }
   .service-card:hover .icon-box,
   .service-card:hover .service-text {

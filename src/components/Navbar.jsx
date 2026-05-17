@@ -68,8 +68,8 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed left-0 right-0 top-0 z-50 w-full bg-cw-mint/95 backdrop-blur transition-transform duration-300 ease-out ${
-        hidden ? "-translate-y-full" : "translate-y-0"
+      className={`fixed left-[0px] right-[0px] top-[0px] z-50 w-full bg-cw-mint/95 backdrop-blur transition-transform duration-300 ease-out ${
+        hidden ? "-translate-y-[80px] lg:-translate-y-[100px]" : "translate-y-[0px]"
       }`}
     >
       <div className="inner flex h-[80px] items-center justify-between lg:h-[100px]">
@@ -109,7 +109,7 @@ export default function Navbar() {
           <a
             href="#contact"
             onClick={close}
-            className="green-btn h-[48px] min-w-[96px] text-[16px] font-normal !px-[25px] !py-0"
+          className="green-btn h-[48px] min-w-[96px] text-[16px] font-normal !px-[25px] !py-[0px]"
           >
             Register
           </a>
@@ -128,15 +128,15 @@ export default function Navbar() {
         <nav
           id="mobile-navigation"
           aria-label="Mobile navigation"
-          className="border-t border-emerald-100 bg-white shadow-soft xl:hidden"
+          className="border-t-[1px] border-emerald-100 bg-white shadow-soft xl:hidden"
         >
-          <div className="inner grid gap-1 py-4">
+          <div className="inner grid gap-[4px] py-[16px]">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 onClick={() => handleLinkClick(item.href)}
                 href={item.href}
-                className={`flex min-h-[44px] items-center rounded-[5px] px-2 text-[16px] font-medium transition hover:bg-cw-mint hover:text-cw-green ${
+                className={`flex min-h-[44px] items-center rounded-[5px] px-[8px] text-[16px] font-medium transition hover:bg-cw-mint hover:text-cw-green ${
                   activeHash === item.href ? "text-cw-green" : "text-cw-dark"
                 }`}
               >
@@ -146,7 +146,7 @@ export default function Navbar() {
             <a
               onClick={close}
               href="#contact"
-              className="green-btn mt-2 h-[48px] w-fit text-[16px] font-normal !px-[25px] !py-0"
+              className="green-btn mt-[8px] h-[48px] w-fit text-[16px] font-normal !px-[25px] !py-[0px]"
             >
               Register
             </a>
